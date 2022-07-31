@@ -40,7 +40,6 @@ class HostInformation:
         # This function updates the package repositories and reports the number of upgradable packages
         # Source:  https://apt-team.pages.debian.net/python-apt/library/apt.cache.html#the-cache-class
 
-        import apt
         from apt.cache import FilteredCache, Cache, MarkedChangesFilter
 
         cache = apt.Cache()
