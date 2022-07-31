@@ -7,5 +7,8 @@
 # Python egg metadata, regenerated from source files by setuptools.
 /*.egg-info
 
+<<<<<<< HEAD
 # Local Notes, Todo List etc.
+=======
+>>>>>>> 95151f21b4470affcc8a8d7e94499e789afee56f
 /Notes/
