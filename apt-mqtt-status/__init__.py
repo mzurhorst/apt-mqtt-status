@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 import apt
 import socket
 
