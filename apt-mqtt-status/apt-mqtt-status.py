@@ -79,3 +79,35 @@ class HostInformation:
         return telegram_message
 
     pass
+
+
+class MyMQTT:
+    # This class establishes the MQTT connection.
+    # It listens and publishes to the topic /it/servers/
+
+    from paho.mqtt import client as mqtt_client
+
+    def __init__(self):
+        self.broker = 'homeassistant.zurhorst.baerl'
+        self.port = 1883
+        self.topic = "it/servers"
+        self.client_id = 'ansible'
+        self.username = 'homeassistant'
+        self.password = 'gautu8raetho1paesheeto6AighahTeipea5eefi9udohQuohph1shooBoo9quoo'
+
+    def connect_mqtt():
+        def on_connect(client, userdata, flags, rc):
+            if rc == 0:
+                print("Connected to MQTT Broker!")
+            else:
+                print("Failed to connect, return code %d\n", rc)
+    # Set Connecting Client ID
+    client = mqtt_client.Client(self.client_id)
+    client.username_pw_set(self.username, self.password)
+    client.on_connect = on_connect
+    client.connect(self.broker, self.port)
+    self.client = client
+    return self.client
+
+
+pass
