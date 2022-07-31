@@ -2,7 +2,7 @@
 Small MQTT client, which sends/receives MQTT messages about available APT updates and notifies a Telgram account. 
 
 ## Introduction
-apt-mqtt-status will can run in client or server mode.
+apt-mqtt-status can run in client or server mode.
 
 ### Client mode
 apt-mqtt-status will be executed periodically (e.g. via a Cronjob), update apt repositories (apt update) and creates a summary upgradable packages (apt list --upgradable).
@@ -15,7 +15,8 @@ The following information will be published:
 - restart hint
 
 Example messages:
-```Client_1 (192.168.47.11) - no updates available.
+```
+Client_1 (192.168.47.11) - no updates available.
 
 Client_1 (192.168.47.11) - 57 updated packages awaiting installation.
 
