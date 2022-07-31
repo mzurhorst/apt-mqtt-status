@@ -9,15 +9,15 @@
 # Description   :  This module provides functions to gather the hostname, IPv4 address
 #                  and upgradeable apt packages and publishs those to an MQTT broker.
 
-import apt
-import socket
-
 
 # TOOD:   https://github.com/python-telegram-bot/python-telegram-bot
 
 
 class HostInformation:
     # This class gethers all required information in Client mode
+
+    import apt
+    import socket
 
     def __init__(self, telegram_message):
         self.hostname = "hostname unknown"
