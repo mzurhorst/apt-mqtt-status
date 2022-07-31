@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+#
+#File           :  setup.py
+# Author        :  Marcus Zurhorst
+#Email          :  marcuszurhorst@gmail.com
+# License       :  MIT License
+# Copyright     :  (c) 2022 Marcus Zurhorst
+#
+# Description   :  This module provides functions to gather the hostname, IPv4 address
+#                  and upgradeable apt packages and publishs those to an MQTT broker.
 
 from setuptools import setup
 

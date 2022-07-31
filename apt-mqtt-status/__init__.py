@@ -1,5 +1,13 @@
 #!/usr/bin/python3
-
+#
+#File           :  __init__.py
+# Author        :  Marcus Zurhorst
+#Email          :  marcuszurhorst@gmail.com
+# License       :  MIT License
+# Copyright     :  (c) 2022 Marcus Zurhorst
+#
+# Description   :  This module provides functions to gather the hostname, IPv4 address
+#                  and upgradeable apt packages and publishs those to an MQTT broker.
 
 import apt
 import socket
